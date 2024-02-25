@@ -1,0 +1,128 @@
+:root {
+  --greyBlue: #eaeafe;
+  --geyPure: #eef1fe;
+  --BlueMagenta: #5040f1;
+  --blackWarm: #1e1c1c;
+}
+
+body {
+  background-color: var(--greyBlue);
+  color: var(--blackWarm);
+  font-family: "Public Sans", sans-serif;
+}
+
+.cs-nav {
+  background-color: var(--geyPure);
+  color: var(--blackWarm);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cs-offcanvas {
+  background-color: var(--geyPure);
+  color: var(--blackWarm);
+}
+
+.nav-link:hover {
+  color: var(--BlueMagenta);
+  transition: ease-in 0.5s;
+}
+
+.cs-dropdown-menu-nav {
+  border: none;
+  background-color: var(--geyPure);
+  color: var(--blackWarm);
+}
+
+.dropdown-item:hover {
+  background-color: var(--BlueMagenta);
+  color: var(--geyPure);
+  transition: ease-in 0.5s;
+  border-radius: 5px;
+}
+
+.cover {
+  background-image: -webkit-linear-gradient(30deg, #5040f1 60%, #1e1c1c 40%);
+  display: flex;
+  flex-direction: column;
+}
+
+.cover .greetings {
+  margin: auto;
+  padding-top: 50px;
+  width: 80%;
+  color: var(--geyPure);
+  text-align: center;
+}
+
+.greetings > p {
+  font-size: 20px;
+}
+
+.greetings > h1 {
+  font-weight: 700;
+}
+
+.greetings > h5 {
+  font-size: 20px;
+  padding: 0 100px;
+}
+
+.profile {
+  margin: auto;
+}
+
+.profile > img {
+  border: 5px solid #ffff;
+  border-radius: 50%;
+  margin-bottom: -100px;
+  widht: 200px;
+  height: 200px;
+}
+
+.project {
+  background-color: #1e1c1c;
+  color: var(--geyPure);
+  min-height: 500px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.project > h3 > span {
+  color: var(--BlueMagenta);
+}
+
+.project > h3 {
+  margin-bottom: 50px;
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  background-color: var(--BlueMagenta);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: bottom;
+}
+
+.card-project > img {
+  margin: auto;
+  border-radius: 5px;
+  border: color 2px #5040f1;
+}
+
+.card-project:hover {
+  background-color: var(--geyPure);
+  color: var(--blackWarm);
+  transform: translateY(-20px);
+}
+
+@media screen and (max-width: 600px) {
+  .greetings > h5 {
+    padding: 0 5px;
+  }
+}
