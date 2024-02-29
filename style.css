@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--greyBlue);
+  background-color: var(--blackWarm);
   color: var(--blackWarm);
   font-family: "Public Sans", sans-serif;
 }
@@ -44,6 +44,7 @@ body {
   background-image: -webkit-linear-gradient(30deg, #5040f1 60%, #1e1c1c 40%);
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .cover .greetings {
@@ -85,6 +86,7 @@ body {
   min-height: 500px;
   padding-top: 150px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .project > h3 > span {
@@ -98,15 +100,24 @@ body {
 .card-project {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 300px;
   background-color: var(--BlueMagenta);
   margin-bottom: 10px;
+  margin-right: 10px;
   border-radius: 5px;
   text-align: left;
   padding: 10px;
   cursor: pointer;
   transition: transform 0.8s ease-in-out;
   transform-origin: bottom;
+}
+
+.card-project > h5 {
+  height: 50px;
+}
+
+.card-project > hr {
+  margin-top: -5px;
 }
 
 .card-project > img {
@@ -121,8 +132,248 @@ body {
   transform: translateY(-20px);
 }
 
+.project-quote {
+  padding: 50px;
+  font-style: italic;
+}
+
+.project-quote > h3 > span {
+  color: var(--BlueMagenta);
+}
+
+.tech-stack {
+  color: var(--geyPure);
+  padding: 50px 50px;
+}
+
+.left-side > h5 {
+  font-size: 15px;
+}
+
+.left-side > h3 {
+  font-weight: 900;
+}
+
+.left-side > h3 > span {
+  color: var(--BlueMagenta);
+}
+
+.left-side > p {
+  font-weght: 100;
+  color: var(--greyBlue);
+}
+
+.left-side > .btn {
+  background-color: var(--BlueMagenta);
+  color: var(--geyPure);
+  font-weight: 500;
+}
+
+.left-side > .btn:hover {
+  background-color: var(--geyPure);
+  color: var(--BlueMagenta);
+  transition: ease-in 0.5s;
+}
+
+.right-side {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "html-css-js laravel"
+    "html-css-js version-control"
+    "vue version-control";
+  gap: 10px;
+}
+
+.right-side .card-stack {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: bottom;
+}
+
+.card-stack > img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.card-stack > h5 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.card-stack > p {
+  color: rgb(100, 116, 139);
+  font-size: 14px;
+}
+
+.html-css-js {
+  grid-area: html-css-js;
+  background-color: rgba(219, 79, 0, 0.3);
+}
+.laravel {
+  grid-area: laravel;
+  background-color: rgba(186, 12, 47, 0.3);
+}
+.version-control {
+  grid-area: version-control;
+  background-color: rgba(97, 218, 251, 0.3);
+}
+.vue {
+  grid-area: vue;
+  background-color: rgba(144, 238, 144, 0.3);
+}
+
+.html-css-js:hover {
+  transform: translateX(-20px);
+}
+
+.laravel:hover {
+  transform: translateY(-20px);
+}
+.version-control:hover {
+  transform: translateX(20px);
+}
+.vue:hover {
+  transform: translateY(20px);
+}
+
+.find-me-title > h3 {
+  color: var(--BlueMagenta);
+  font-size: 18px;
+}
+
+.find-me-title > p {
+  color: var(--greyBlue);
+  padding: 0 200px;
+}
+
+.socmed-card {
+  padding: 0 7px;
+  margin-right: 5px;
+  border: solid 1px #eef1fe;
+  border-radius: 5px;
+  font-size: 30px;
+  color: var(--geyPure);
+}
+
+.socmed-card:hover {
+  border: solid 1px #5040f1;
+  color: var(--BlueMagenta);
+}
+
+.work-for {
+  padding: 75px 0;
+  background-image: linear-gradient(180deg, rgba(30, 28, 28, 1), rgba(30, 41, 59, 1));
+  color: var(--greyBlue);
+}
+
+.work-for-content {
+  color: var(--greyBlue);
+}
+
+.work-for-content > h5 {
+  color: var(--BlueMagenta);
+}
+
+.work-for-content > h4 {
+  font-size: 34px;
+}
+
+.work-for-content > p {
+  color: #5f6f85;
+}
+
+.card-industry {
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border: solid 1px #5f6f85;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-industry:hover {
+  border-color: var(--BlueMagenta);
+  color: var(--BlueMagenta);
+  transition: 0.2s ease-in;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-industry > i {
+  font-size: 34px;
+}
+
+.card-industry > p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: var(--greyBlue);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-brand > a {
+  font-size: 30px;
+}
+
+.footer-brand > hr {
+  margin-top: -5px;
+}
+
+.footer-nav > h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--BlueMagenta);
+}
+
+.footer-nav > ul > li > a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blackWarm);
+}
+
+.footer-nav > ul > li > a:hover {
+  color: var(--BlueMagenta);
+}
+
 @media screen and (max-width: 600px) {
   .greetings > h5 {
     padding: 0 5px;
+  }
+
+  .right-side {
+    grid-template-areas:
+      "html-css-js html-css-js"
+      "laravel vue"
+      "version-control version-control";
+  }
+
+  .html-css-js:hover {
+    transform: translateY(-20px);
+  }
+
+  .laravel:hover {
+    transform: translateX(-20px);
+  }
+  .version-control:hover {
+    transform: translateY(20px);
+  }
+  .vue:hover {
+    transform: translateX(20px);
+  }
+
+  .find-me-title > p {
+    color: var(--greyBlue);
+    padding: 0 50px;
   }
 }
